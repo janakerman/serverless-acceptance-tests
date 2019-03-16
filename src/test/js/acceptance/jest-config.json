@@ -1,4 +1,6 @@
 {
     "testEnvironment": "./ServerlessEnvironment.js",
-    "testMatch": ["./**/*test.js"]
-  }
+    "testEnvironmentOptions": {
+        "serviceName": "example-service"
+    }
+}

@@ -1,14 +1,14 @@
 const axios = require('axios');
 
-describe('Feature 2 acceptance tests', () => {
+describe('Feature 1 acceptance tests', () => {
 
     beforeAll(async () => {
         const apiGatewayEndpoint = await global.apiGatewayEndpoint
-        this.addOfficeEndpoint = `${apiGatewayEndpoint}/hello`
+        this.endpoint = `${apiGatewayEndpoint}/hello`
     })
 
     test('Hello test 1', async () => {
-        const createResponse = await axios.post(this.addOfficeEndpoint)
+        const createResponse = await axios.get(this.endpoint)
         expect(createResponse.status).toBe(200)
     })
 
