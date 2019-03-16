@@ -1,0 +1,18 @@
+{
+  "name": "serverless-acceptance-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "acceptance-test": "jest --config src/test/js/acceptance/jest-config.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk": "^2.422.0",
+    "axios": "^0.18.0",
+    "jest": "^24.5.0",
+    "uuid": "^3.3.2"
+  }
+}
